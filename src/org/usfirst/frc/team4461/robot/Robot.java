@@ -11,11 +11,11 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class Robot extends IterativeRobot {
-	
+
 	public static OI m_oi;
 	public static DriveBase m_DriveBase;
 	public static Gyro m_Gyro;
-	
+
 	public static SendableChooser<Command> TestAuto;
 
 	Command m_autonomousCommand;
@@ -24,7 +24,7 @@ public class Robot extends IterativeRobot {
 	public void listChoosers(SendableChooser<Command> sendableChooser) {
 		sendableChooser.addObject("Test Auto Code", new TestAutonomous());
 	}
-	
+
 	@Override
 	public void robotInit() {
 		TestAuto = new SendableChooser<Command>();
@@ -32,7 +32,7 @@ public class Robot extends IterativeRobot {
 		listChoosers(TestAuto);
 		m_autonomousCommand = new ScheduleCommands();
 		SmartDashboard.putData("Auto mode", m_chooser);
-		
+
 		m_DriveBase = new DriveBase();
 		m_Gyro = new Gyro();
 		m_oi = new OI();
@@ -67,6 +67,7 @@ public class Robot extends IterativeRobot {
 			m_autonomousCommand.cancel();
 		}
 	}
+
 	@Override
 	public void teleopPeriodic() {
 		Scheduler.getInstance().run();

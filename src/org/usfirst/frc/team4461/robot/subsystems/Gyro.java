@@ -4,7 +4,6 @@ import org.usfirst.frc.team4461.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-
 public class Gyro extends Subsystem {
 
 	public void initDefaultCommand() {
