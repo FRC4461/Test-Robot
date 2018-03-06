@@ -42,10 +42,10 @@ public class EncoderDrive extends Command {
 	}
 
 	protected boolean isFinished() {
-//		if (Math.abs(RobotMap.backLeft.getSelectedSensorPosition(0)) > Math.abs(countsToMove)){
-//			System.out.println("Done");
-//			return true;
-//		}
+		if (Math.abs(RobotMap.backLeft.getSelectedSensorPosition(0)) > Math.abs(countsToMove)){
+			System.out.println("Done");
+			return true;
+		}
 		return false;
 	}
 
