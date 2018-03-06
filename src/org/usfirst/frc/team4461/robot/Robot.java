@@ -1,9 +1,9 @@
 package org.usfirst.frc.team4461.robot;
 
+import org.usfirst.frc.team4461.robot.commandGroups.TestAutonomous;
 import org.usfirst.frc.team4461.robot.commands.ScheduleCommands;
 import org.usfirst.frc.team4461.robot.subsystems.DriveBase;
 import org.usfirst.frc.team4461.robot.subsystems.Gyro;
-import commandGroups.TestAutonomous;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
