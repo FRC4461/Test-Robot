@@ -1,13 +1,10 @@
-package org.usfirst.frc4461.PapaGurGur.commands;
+package org.usfirst.frc.team4461.robot.commands;
 
 import org.usfirst.frc.team4461.robot.Robot;
 import org.usfirst.frc.team4461.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-/**
- *
- */
 public class EncoderDrive extends Command {
 	private static final int COUNTS_PER_REVOLUTION = 1024;
 	private static final double WHEEL_CIRCUMFERENCE = 6 * Math.PI;
